@@ -1,0 +1,26 @@
+{
+  "name": "RMQ-DASAR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub:hallo": "node ./src/worker/publish/HalloWorld.js",
+    "con:hallo": "node ./src/worker/subscribe/HalloWorld.js",
+    "pub:publish": "node ./src/worker/publish/publish.js",
+    "con:subscribe": "node ./src/worker/subscribe/subscribe.js",
+    "pub:taks":"node ./src/worker/publish/Taks.js",
+    "con:taks": "node ./src/worker/subscribe/Worker.js",
+    "pub:route":"node ./src/worker/publish/route.js",
+    "con:route":"node ./src/worker/subscribe/Routing.js",
+    "pub:topic":"node ./src/worker/publish/topic.js",
+    "con:topic":"node ./src/worker/subscribe/Topic.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "dotenv": "^8.2.0"
+  }
+}

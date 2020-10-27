@@ -1,0 +1,26 @@
+Type Exchange RabbitMQ
+
+1. Default 
+di deklarasikan dengan string kosong , exchange ini 
+bisa di sebut sebagai pengiriman langsung namun
+sebenarnya bukan itu yang terjadi untuk secara teksnis.
+
+Broker -> queue -> message
+
+2. Direct
+pertukaran langusng yang mengikuti routing key
+
+       -> routing key=>"image.arcive" -> arcive	
+images -> routing key=>"image.arcive" -> croper
+       -> routing key=>"image.arcive" -> resize
+
+3.Fanout
+pesan di kirim ke semua antrean.
+bisa di asumsikan dengakn publish x subscribe dimana 1 
+publiaher dapat di terima oleh banyak conumer.
+
+4. Topic 
+pesan yang di kirim sesui dengan topik / categori yang 
+spesipik.
+
+5.Header 
